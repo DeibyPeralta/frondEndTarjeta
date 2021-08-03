@@ -43,4 +43,9 @@ export class TarjetaCreditoComponent implements OnInit {
 
     this.form.reset();
   }
+
+  eliminarTarjeta(index: number){
+    console.log(index);
+    this.listTarjetas.splice(index, 1);
+  }
 }
